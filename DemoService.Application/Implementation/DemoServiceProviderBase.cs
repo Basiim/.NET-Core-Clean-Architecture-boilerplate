@@ -7,5 +7,6 @@ namespace DemoService.Application.Implementation
     public abstract class DemoServiceProviderBase : IDemoServiceProvider
     {
         public abstract Task<DemoServiceResponse> GetDemoData(GetDemoDatasQuery reqQuery);
+        public abstract Task<DemoServiceResponse> GetDemoData(int id);
     }
 }

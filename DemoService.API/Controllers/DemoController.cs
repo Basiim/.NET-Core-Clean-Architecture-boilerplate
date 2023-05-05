@@ -16,6 +16,13 @@ namespace DemoService.API.Controllers
             _mediator = mediator;
         }
 
+        [HttpGet(nameof(Greetings))]
+        public async Task<ActionResult<Response<Demo>>> Greetings([FromQuery] int id)
+        {
+            var response = await _mediator.Send(id);
+            return Ok(response);
+        }
+
         [HttpPost(nameof(Greetings))]
         public async Task<ActionResult<Response<Demo>>> Greetings([FromBody] GetDemoDataQuery query)
         {

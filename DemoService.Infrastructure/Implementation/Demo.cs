@@ -14,5 +14,15 @@ namespace DemoService.Infrastructure.Implementation
             };
             return res;
         }
+
+        public Task<DemoServiceResponse> GetDemoData(int id)
+        {
+            var res = new DemoServiceResponse()
+            {
+
+                Response = $"Hello World!"
+            };
+            return Task.FromResult(res);
+        }
     }
 }

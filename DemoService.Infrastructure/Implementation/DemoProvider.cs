@@ -11,5 +11,8 @@ namespace DemoService.Infrastructure.Implementation
         public DemoProvider(IDemo demo) { _demo = demo; }
         public override async Task<DemoServiceResponse> GetDemoData(GetDemoDatasQuery reqQuery)
         => await _demo.GetDemoData(reqQuery);
+
+        public override async Task<DemoServiceResponse> GetDemoData(int id)
+        => await _demo.GetDemoData(id);
     }
 }

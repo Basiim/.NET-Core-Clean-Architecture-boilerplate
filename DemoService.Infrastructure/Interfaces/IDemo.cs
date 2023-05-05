@@ -6,5 +6,6 @@ namespace DemoService.Infrastructure.Interfaces
     public interface IDemo
     {
         Task<DemoServiceResponse> GetDemoData(GetDemoDatasQuery query);
+        Task<DemoServiceResponse> GetDemoData(int id);
     }
 }
