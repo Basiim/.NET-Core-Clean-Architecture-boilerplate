@@ -15,7 +15,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd .NET-Core-Clean-Architecture-boilerplate
 ```
 
 Open with Visual Studio and run using 
